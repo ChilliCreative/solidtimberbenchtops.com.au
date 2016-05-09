@@ -3,6 +3,8 @@ web/app/plugins/*
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*/
 !web/app/mu-plugins/atl-custom
+!web/app/mu-plugins/front-end-posting.php
+!web/app/mu-plugins/recent-portfolio-posts.php
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
