@@ -49,7 +49,12 @@
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
-    "wordpress-install-dir": "web/wp"
+    "wordpress-install-dir": "web/wp",
+    "patches": {
+      "johnpbloch/wordpress": {
+        "Prevent E_DEPRECATED error messages when debug is enabled": "wordpress.patch"
+      }
+    }
   },
   "scripts": {
     "test": [
