@@ -1,6 +1,10 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
+!web/app/plugins/js_composer
+!web/app/plugins/Layerslider
+!web/app/plugins/qode-instagram-widget
+!web/app/plugins/Ultimate_VC_Addons
 web/app/mu-plugins/*/
 !web/app/mu-plugins/atl-custom
 !web/app/mu-plugins/front-end-posting.php
