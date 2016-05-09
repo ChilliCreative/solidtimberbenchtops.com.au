@@ -1,0 +1,396 @@
+/*
+Theme Name: ATL
+Description: Developed by TheTallOne
+Author: TheTallOne
+Author URI: http://thetallone.co.uk
+Version: 1.0.0
+Template: bridge
+*/
+
+@import url("../bridge/style.css");
+
+/* General */
+
+.footer_top h5 {
+    margin-top: 20px;
+}
+
+p {
+    letter-spacing: 2px;
+}
+
+
+/* Portfolio Single */
+
+.generalUploadSection-Single .wpb_wrapper {
+    text-align: center;
+}
+
+.generalUploadSection-Single .vc_custom_1461079395844 {
+    background: #fff;
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.generalUploadSection-Single .vc_custom_146063390280944 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+
+.generalUploadSection-Single .vc_custom_146114513987544 {
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+    background-image: url(img/DummyImage.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.singlePort-CTA .call_to_action .text_wrapper .call_to_action_text {
+    color: #000;
+    letter-spacing: 4px;
+    font-size: 21px;
+    line-height: 29px;
+    font-weight: 700;
+}
+
+.singlePort-CTA .call_to_action {
+    background: #f9f9f9 !important;
+}
+
+.qode_portfolio_related {
+    background: #F9F9F9 none repeat scroll 0 0;
+    padding-bottom: 100px;
+}
+
+.projects_holder article .portfolio_description {
+    background: #f9f9f9;
+}
+
+.qode_portfolio_related h4 {
+    text-align: left;
+    padding: 100px 0 20px;
+}
+
+.qode_portfolio_related p {
+    margin-bottom: 20px;
+}
+
+
+/* Contact Page */
+
+.q_icon_list {
+    margin-top: 21px;
+}
+
+.q_icon_list p {
+    text-align: right;
+    padding-right: 5px;
+    color: #555;
+}
+
+.q_icon_list i {
+    font-size: 4em;
+}
+
+.page #contactForm .wpb_wrapper span input.wpcf7-form-control {
+    display: inline-block;
+    float: left;
+    margin: 0 2% 10px 0;
+    width: 48%;
+}
+
+.page #contactForm .wpb_wrapper span.your-company input.wpcf7-text,
+.page #contactForm .wpb_wrapper span.your-subject input.wpcf7-text {
+    margin: 0 0 10px;
+    width: 50%;
+}
+
+.page #contactForm .wpb_wrapper span input,
+.page .wpb_wrapper span textarea {
+    background: #eee;
+    color: #222;
+    font-weight: 600;
+}
+
+.page #contactForm input.wpcf7-form-control.wpcf7-submit {
+    background: #f28e1f none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 10px 30px;
+}
+
+
+/* Upload Section BG Image */
+
+#generalUploadSection .generalUploadSection-Image {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+
+#generalUploadSection .generalUploadSection-Image .vc_column-inner {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+
+/* Upload Page */
+
+.uploadBg {
+    background-position: center top !important;
+}
+
+#loadingOverlay {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 99999999;
+    padding-top: 300px;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.uploadFormTitle h1 {
+    font-size: 74px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 400;
+}
+
+.page .uploadForm input.wpcf7-form-control {
+    display: inline-block;
+    float: left;
+    margin: 0 2% 10px 0;
+    width: 31%;
+    box-sizing: border-box;
+}
+
+.page .uploadForm input,
+.page .uploadForm textarea {
+    background: #eee;
+    color: #222;
+    font-weight: 600;
+}
+
+.page .uploadForm input#submit {
+    background: #f28e1f none repeat scroll 0 0;
+    border: 0 none;
+    border-radius: 0;
+    color: #ffffff;
+    display: block;
+    margin: 40px auto 100px;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: 1px solid #f28e1f;
+}
+
+.page .uploadForm input#submit:hover {
+    background: #fff;
+    color: #f28e1f;
+    border: 1px solid #f28e1f;
+}
+
+.page .uploadForm .uploadImagesFormWrap {
+    display: inline-block;
+    margin: 0 2% 10px 0;
+    width: 31%;
+}
+
+.page .uploadForm .uploadImagesForm {
+    display: block;
+    margin: 60px 0;
+    position: relative;
+}
+
+.page .uploadForm .uploadImagesFormWrap input.wpcf7-form-control {
+    display: inline-block;
+    float: left;
+    margin: 0 0% 10px 0;
+    width: 100%;
+}
+
+.page .uploadForm .uploadDescription {
+    display: inline-block;
+    width: 64%;
+    margin: 0;
+    vertical-align: top;
+}
+
+.page .uploadForm .uploadDescription textarea {
+    margin: 0;
+}
+
+.page .uploadForm .hide_this.uploadImagebtn {
+    background: #f18e20 none repeat scroll 0 0;
+    text-align: center;
+}
+
+.page .uploadForm .uploadImagesForm .wpcf7-form-control.wpcf7-file {
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 996;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.page .uploadForm .uploadImagesForm a.del_file {
+    right: 5;
+    position: absolute;
+    top: 5;
+    z-index: 999;
+}
+
+.page .uploadForm .hide_this.uploadImagebtn {
+    background: #f18e20 none repeat scroll 0 0;
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+#selectedFiles img {
+    max-width: 125px;
+    max-height: 125px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.confirmation {
+    opacity: 0;
+    background: #23D429;
+    color: #000;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px auto;
+    padding: 15px 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* Custom Portfolio Widget */
+
+.atlwp_latest_cpt ul li {
+    list-style: none;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+.atlwp_latest_cpt img {
+    width: 20%;
+}
+
+.atlwp_latest_cpt a {
+    text-transform: uppercase;
+    position: relative;
+    font-size: 14px;
+    line-height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 700;
+    padding: 0 0 0px 10px;
+    display: inline-block;
+}
+
+
+/* Unorganised */
+
+
+/* Responsiveness */
+
+
+/* Tablet Landscape (and below) */
+
+@media only screen and (max-width: 1024px) {
+    .atlwp_latest_cpt a {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+}
+
+
+/* Tablet Portrait (and below) */
+
+@media only screen and (max-width: 768px) {
+    .textwidget p a {
+        clear: both;
+        display: block;
+    }
+    .uploadFormTitle h1 {
+        font-size: 56px;
+    }
+    .atlwp_latest_cpt ul {
+        padding: 8px 0 0 0;
+    }
+    .atlwp_latest_cpt img {
+        display: none;
+    }
+    .atlwp_latest_cpt a {
+        font-size: 12px;
+        padding: 0;
+        clear: both;
+    }
+    .q_icon_list i {
+        font-size: 3em;
+    }
+    .q_icon_list p {
+        font-size: 12px;
+        color: #555;
+    }
+}
+
+
+/* Mobile (and below) */
+
+@media only screen and (max-width: 736px) {
+    .q_icon_list i {
+        font-size: 3em;
+    }
+    .q_icon_list p {
+        font-size: 12px;
+        color: #555;
+    }
+    .page .uploadForm span input.wpcf7-form-control {
+        display: inline-block;
+        float: left;
+        margin: 0 2% 10px 0;
+        width: 98%;
+    }
+    .page .uploadForm .uploadImagesFormWrap {
+        display: inline-block;
+        margin: 0 2% 10px 0;
+        width: 98%;
+    }
+    .page .uploadForm .uploadDescription {
+        display: inline-block;
+        width: 98%;
+        margin: 0;
+        vertical-align: top;
+    }
+}
