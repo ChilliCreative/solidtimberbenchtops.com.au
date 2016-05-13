@@ -8,6 +8,7 @@ web/app/plugins/*
 !web/app/plugins/Layerslider
 !web/app/plugins/qode-instagram-widget
 !web/app/plugins/Ultimate_VC_Addons
+!web/app/plugins/simple-facebook-publish
 web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
