@@ -81,6 +81,10 @@ p {
     margin-bottom: 20px;
 }
 
+.portfolio_single h3 {
+	display:none;
+}
+
 
 /* Contact Page */
 
