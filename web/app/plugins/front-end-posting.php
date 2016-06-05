@@ -115,7 +115,7 @@ function atl_gallery_upload_frontend() {
                 <input type="number" name="your-company-tel" value="" class="wpcf7-form-control wpcf7-number wpcf7-validates-as-required wpcf7-validates-as-number" required aria-invalid="false" placeholder="COMPANY TELEPHONE" />
                     <div class="uploadImagesForm">
                         <input type="file" id="files" name="file[]" size="40" class="wpcf7-form-control wpcf7-file" aria-invalid="false" multiple accept="image/*" />
-                        <img src="<?php echo site_url(); ?>/wp-content/themes/atl/img/uploadImage.png" alt="Upload Images">
+                        <img src="/app/themes/ATL/img/uploadImage.png" alt="Upload Images">
                     </div>
             </div>
 
@@ -250,7 +250,7 @@ function save_and_send_post_data() {
 				}
 
 				// EMAIL TEMPLATE
-				$strTo = array ('dale@thetallone.co.uk');
+				$strTo = array ('richard@thetallone.co.uk');
 				$headers = "Reply-To: ". wp_strip_all_tags( $email ) ."\r\n";
 				$headers .= "MIME-Version: 1.0\r\n";
 				$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
