@@ -50,7 +50,11 @@ function fp_activate() {
 
 register_activation_hook( __FILE__, 'fp_activate' );
 
-
+add_filter('site_transient_update_plugins', 'dd_remove_update_nag');
+function dd_remove_update_nag($value) {
+ unset($value->response[ plugin_basename(__FILE__) ]);
+ return $value;
+}
 
 require_once("lib/functions.php");
 
