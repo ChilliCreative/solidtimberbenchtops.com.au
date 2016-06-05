@@ -38,7 +38,7 @@ else { $paged = 1; }
 	<?php get_header(); ?>
 
     <div id="loadingOverlay">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/loading.gif" alt="Loading..." />
+    <img src="/app/themes/ATL/img/loading.gif" alt="Loading..." />
 	<h1>Processing</h1>
 	<p>Your details are being saved and submitted... <br />
 	Please do not close the browser window. Thankyou.</p>
