@@ -3,25 +3,25 @@ defined('ABSPATH') or die('No script kiddies please!');
 /**
  * Plugin Name: ATL Facebook Auto Post
  * Plugin URI: https://the.tall.one
- * Description: A plugin to publish your ATL Galler posts to facebook profile and fan pages
+ * Description: A plugin to publish your ATL Gallery posts to facebook profile and fan pages
  * Version: 1.0
  * Author: Richard Beno
  * Text Domain: accesspress-facebook-auto-post
  * Domain Path: /languages/
  * License: GPL2
  */
- 
+
  /**
  * Necessary constants define
  */
- 
+
 add_filter('site_transient_update_plugins', 'dd_remove_update_nag');
 function dd_remove_update_nag($value) {
  unset($value->response[ plugin_basename(__FILE__) ]);
  return $value;
 }
- 
- 
+
+
 if (!defined('AFAP_CSS_DIR')) {
     define('AFAP_CSS_DIR', plugin_dir_url(__FILE__) . '/css');
 }
@@ -94,9 +94,9 @@ if (!class_exists('AFAP_Class')) {
             add_action('admin_post_afap_delete_log', array($this, 'delete_log')); //clears log from log table
             add_action('admin_post_afap_restore_settings', array($this, 'restore_settings')); //clears log from log table
             add_action('add_meta_boxes', array($this, 'add_afap_meta_box')); //adds plugin's meta box
-            add_action('save_post', array($this, 'save_afap_meta_value')); //saves meta value 
-            add_action('future_to_publish', array($this, 'auto_post_schedule')); 
-            
+            add_action('save_post', array($this, 'save_afap_meta_value')); //saves meta value
+            add_action('future_to_publish', array($this, 'auto_post_schedule'));
+
         }
 
         /**
@@ -137,7 +137,7 @@ if (!class_exists('AFAP_Class')) {
             if (!session_id()) {
                 session_start();
             }
-            load_plugin_textdomain( 'afap', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' ); 
+            load_plugin_textdomain( 'afap', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
         }
 
         /**
@@ -248,7 +248,7 @@ if (!class_exists('AFAP_Class')) {
                 $publish_future_action = 'publish_future_'.$post_type;
                 add_action($publish_action, array($this, 'auto_post'), 10, 2);
               //  add_action($publish_action, array($this, 'auto_post_schedule'), 10, 2);
-                
+
             }
         }
 
@@ -264,7 +264,7 @@ if (!class_exists('AFAP_Class')) {
                 $_POST['afap_auto_post'] = 'no';
             }
         }
-        
+
         function auto_post_schedule($post){
             $auto_post = get_post_meta($post->ID,'afap_auto_post',true);
             if ($auto_post == 'yes' || $auto_post == '') {
@@ -292,7 +292,7 @@ if (!class_exists('AFAP_Class')) {
         }
 
         /**
-         * 
+         *
          * Delete Log
          */
         function delete_log() {
@@ -324,7 +324,7 @@ if (!class_exists('AFAP_Class')) {
 
         /**
          * afap_meta_box html
-         * 
+         *
          * */
         function render_meta_box_content($post) {
             // Add an nonce field so we can check for it later.
@@ -391,7 +391,7 @@ if (!class_exists('AFAP_Class')) {
             // Update the meta field.
             update_post_meta($post_id, 'afap_auto_post', $auto_post);
         }
-        
+
         /**
          * Restores Default Settings
          */
@@ -409,5 +409,3 @@ if (!class_exists('AFAP_Class')) {
 
     $afap_obj = new AFAP_Class();
 }// class Termination
-
-
