@@ -120,6 +120,7 @@ p {
     background: #eee;
     color: #222;
     font-weight: 600;
+	padding: 15px 15px 16px;
 }
 
 .page #contactForm input.wpcf7-form-control.wpcf7-submit {
@@ -219,7 +220,7 @@ p {
 
 .page .uploadForm .uploadImagesFormWrap {
     display: inline-block;
-    margin: 0 2% 10px 0;
+    margin: 0 1.6% 10px 0;
     width: 31%;
 }
 
