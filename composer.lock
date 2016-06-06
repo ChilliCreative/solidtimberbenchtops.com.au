@@ -194,6 +194,7 @@
         },
         {
             "name": "oscarotero/env",
+<<<<<<< HEAD
             "version": "v1.0.2",
             "source": {
                 "type": "git",
@@ -204,6 +205,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/oscarotero/env/zipball/0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
                 "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
+=======
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oscarotero/env.git",
+                "reference": "8836fc53726466fea17137c2f2622d89de51cd67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/8836fc53726466fea17137c2f2622d89de51cd67",
+                "reference": "8836fc53726466fea17137c2f2622d89de51cd67",
+>>>>>>> 7e56f806877505ed29f202c66d53843539b7ba81
                 "shasum": ""
             },
             "require": {
@@ -232,7 +245,11 @@
             "keywords": [
                 "env"
             ],
+<<<<<<< HEAD
             "time": "2016-05-08 17:14:32"
+=======
+            "time": "2015-12-31 12:34:29"
+>>>>>>> 7e56f806877505ed29f202c66d53843539b7ba81
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -340,6 +357,7 @@
                 "environment"
             ],
             "time": "2016-04-15 10:48:49"
+<<<<<<< HEAD
         },
         {
             "name": "wp-sync-db/wp-sync-db",
@@ -484,6 +502,8 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+=======
+>>>>>>> 7e56f806877505ed29f202c66d53843539b7ba81
         }
     ],
     "packages-dev": [
@@ -568,9 +588,13 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
+<<<<<<< HEAD
     "stability-flags": {
         "wp-sync-db/wp-sync-db": 20
     },
+=======
+    "stability-flags": [],
+>>>>>>> 7e56f806877505ed29f202c66d53843539b7ba81
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
