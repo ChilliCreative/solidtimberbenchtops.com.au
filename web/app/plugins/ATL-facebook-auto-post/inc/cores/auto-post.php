@@ -117,7 +117,7 @@ if (in_array($post_type, $account_details['post_types']) && $account_extra_detai
     $post_excerpt = $post->post_excerpt;
     $post_link = str_replace(array('http://', 'https://'), '', rwmb_meta( 'company-url' ));
     $post_author_id = str_replace(array('http://', 'https://'), '', rwmb_meta( 'company-name' ));
-    $caption = get_bloginfo('description');
+    $caption = str_replace(array('http://', 'https://'), '', rwmb_meta( 'company-name' ));
     $author_name = get_the_author_meta('user_nicename', $post_author_id);
     $message_format = str_replace('#post_title', $post_title, $message_format);
     $message_format = str_replace('#post_content', $post_content, $message_format);
