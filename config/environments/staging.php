@@ -7,3 +7,5 @@ define('WP_DEBUG_LOG', true);
 define('SCRIPT_DEBUG', false);
 /** Disable all file modifications including updates and update notifications */
 define('DISALLOW_FILE_MODS', true);
+/** Contact form 7 */
+define( 'WPCF7_AUTOP', false );
