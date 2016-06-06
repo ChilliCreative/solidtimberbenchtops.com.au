@@ -163,7 +163,7 @@ if (!class_exists('AFAP_Class')) {
          * Registers Admin Menu
          */
         function afap_admin_menu() {
-            add_menu_page(__('AccessPress Facebook Auto Post', 'accesspress-facebook-auto-post'), __('AccessPress Facebook Auto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post', 'accesspress-facebook-auto-post'), 'manage_options', 'afap', array($this, 'plugin_settings'),'dashicons-facebook-alt');
+            add_menu_page(__('ATL Facebook Auto Post', 'accesspress-facebook-auto-post'), __('ATL Facebook Auto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Post', 'accesspress-facebook-auto-post'), 'manage_options', 'afap', array($this, 'plugin_settings'),'dashicons-facebook-alt');
         }
 
         /**
@@ -314,7 +314,7 @@ if (!class_exists('AFAP_Class')) {
         function add_afap_meta_box($post_type) {
             add_meta_box(
                     'afap_meta_box'
-                    , __('AccessPress Facebook Auto Post', 'accesspress-facebook-auto-post')
+                    , __('ATL Facebook Auto Post', 'accesspress-facebook-auto-post')
                     , array($this, 'render_meta_box_content')
                     , $post_type
                     , 'side'
