@@ -1,18 +1,17 @@
 <?php
 defined('ABSPATH') or die('No script kiddies please!');
 /**
- * Plugin Name: AccessPress Facebook Auto Post
- * Plugin URI: https://accesspressthemes.com/wordpress-plugins/accesspress-facebook-auto-post/
- * Description: A plugin to publish your wordpress posts to facebook profile and fan pages
- * Version: 1.2.5
- * Author: AccessPress Themes
- * Author URI: http://accesspressthemes.com
+ * Plugin Name: ATL Facebook Auto Post
+ * Plugin URI: https://the.tall.one
+ * Description: A plugin to publish your ATL Galler posts to facebook profile and fan pages
+ * Version: 1.0
+ * Author: Richard Beno
  * Text Domain: accesspress-facebook-auto-post
  * Domain Path: /languages/
  * License: GPL2
  */
  
-/**
+ /**
  * Necessary constants define
  */
 if (!defined('AFAP_CSS_DIR')) {
