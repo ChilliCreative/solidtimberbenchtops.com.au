@@ -102,15 +102,26 @@ p {
     font-size: 4em;
 }
 
-.page #contactForm .wpb_wrapper span input.wpcf7-form-control {
+.page #contactForm .wpb_wrapper span.wpcf7-form-control-wrap {
     display: inline-block;
-    float: left;
+	float:left;
     margin: 0 2% 10px 0;
     width: 48%;
 }
 
-.page #contactForm .wpb_wrapper span.your-company input.wpcf7-text,
-.page #contactForm .wpb_wrapper span.your-subject input.wpcf7-text {
+.page #contactForm .wpb_wrapper span.wpcf7-form-control-wrap.your-message {
+    display: inline-block;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+
+.page #contactForm .wpb_wrapper span input.wpcf7-form-control {
+    margin: 0;
+    width: 100%;
+}
+
+.page #contactForm .wpb_wrapper span.your-company,
+.page #contactForm .wpb_wrapper span.your-subject{
     margin: 0 0 10px;
     width: 50%;
 }
@@ -120,7 +131,7 @@ p {
     background: #eee;
     color: #222;
     font-weight: 600;
-	padding: 15px 15px 16px;
+	padding: 15px 15px 15px;
 }
 
 .page #contactForm input.wpcf7-form-control.wpcf7-submit {
@@ -132,6 +143,16 @@ p {
     padding: 10px 30px;
 }
 
+.wpcf7-response-output {clear:both; font-weight:700;}
+span.wpcf7-not-valid-tip {
+    position: absolute;
+    /* float: right; */
+    right: 5px;
+	font-weight:600;
+	font-size:14px;
+}
+
+.page #contactForm .wpb_wrapper span.wpcf7-form-control-wrap.your-message span.wpcf7-not-valid-tip {top:5px;}
 
 /* Upload Section BG Image */
 
