@@ -302,7 +302,7 @@
 
     body{
     	    	    	font-family: 'Raleway', sans-serif;
-    	    	 color: #666666;     	 font-size: 14px;     	    }
+    	    	 color: #000000;     	 font-size: 14px;     	    }
     .projects_holder article .portfolio_description,
 .blog_holder.masonry article .post_text .post_text_inner,
 .blog_holder.masonry_full_width article .post_text .post_text_inner,
@@ -316,26 +316,7 @@
 .header_bottom,
 .header_top,
 .fixed_top_header .bottom_header{
-	background-color: rgba(255,255,255,0);
-}
-
-
-.header_bottom,
-.header_top,
-.fixed_top_header .bottom_header{
-    border-bottom: 0;
-}
-
-.header_bottom,
-.fixed_top_header .bottom_header{
-    box-shadow: none;
-}
-
-.header_top .right .inner > div:first-child,
-.header_top .right .inner > div,
-.header_top .left .inner > div:last-child,
-.header_top .left .inner > div {
-    border: none;
+	background-color: rgba(255,255,255,0.9);
 }
 
 
@@ -355,7 +336,7 @@ header.fixed_hiding.scrolled .header_top {
 .header_top,
 .fixed_top_header .top_header,
 .fixed_top_header nav.mobile_menu{
-	background-color: rgba(255,255,255,0);
+	background-color: rgba(255,255,255,0.9);
 }
 header.sticky .header_top{
 	background-color: rgba(0,0,0,1);
@@ -446,7 +427,7 @@ h4,
 h4 a{
 						    	text-transform: uppercase; }
     p{
-    	color: #666666;    	    		font-family: 'Raleway', sans-serif;
+    	color: #000000;    	    		font-family: 'Raleway', sans-serif;
     	    	font-size: 14px;    	line-height: 25px;    	font-style: normal;    	    	    	    }
     .filter_holder ul li span,
     blockquote h5,
@@ -474,7 +455,7 @@ h4 a{
     .side_menu #lang_sel_list.lang_sel_list_horizontal a,
     .side_menu #lang_sel_list.lang_sel_list_vertical a,
     #lang_sel_footer a{
-    	color: #666666;    }
+    	color: #000000;    }
     .header_top #lang_sel > ul > li > a, 
     .header_top #lang_sel_click > ul > li> a,
     footer #lang_sel ul li a,
@@ -488,7 +469,7 @@ h4 a{
     section.side_menu #lang_sel_click > ul > li > a,
     section.side_menu #lang_sel_click ul ul a,
     section.side_menu #lang_sel_click ul ul a:visited{
-    	color: #666666 !important;    }
+    	color: #000000 !important;    }
     a, p a{
 	color: #f28e1f;		font-weight: 500;	text-decoration: none;}
 
@@ -653,6 +634,18 @@ color: #ffffff	}
 	font-size: 16px;letter-spacing: 2px	}
 
 
+	.footer_top,
+	.footer_top .footer_col1,
+	.footer_top .container_inner > .widget,
+	.footer_top.footer_top_full > .widget{
+		text-align: left;
+	}
+	.footer_top .footer_col2{
+		text-align: center;
+	}
+	.footer_top .footer_col3{
+		text-align: right;
+	}
 
     .footer_bottom_holder,
     .footer_bottom,

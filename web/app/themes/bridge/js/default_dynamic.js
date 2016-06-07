@@ -153,7 +153,7 @@ function showContactMap() {
 
 var no_ajax_pages = [];
 var qode_root = 'http://lcl.solidtimberbenchtops.com.au/';
-var theme_root = 'http://lcl.solidtimberbenchtops.com.au/wp-content/themes/bridge/';
+var theme_root = 'http://lcl.solidtimberbenchtops.com.au/app/themes/bridge/';
 var header_style_admin = "";
 if(typeof no_ajax_obj !== 'undefined') {
 	no_ajax_pages = no_ajax_obj.no_ajax_pages;
