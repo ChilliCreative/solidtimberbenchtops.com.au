@@ -108,6 +108,7 @@ function atl_gallery_upload_frontend() {
         <input type="text" name="first-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required aria-invalid="false" placeholder="FIRST NAME" />
         <input type="text" name="last-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required aria-invalid="false" placeholder="LAST NAME" />
         <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" required aria-invalid="false" placeholder="E-MAIL" />
+        <input type="email" name="not-your-email" id="not-your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-emailnot wpcf7-validates-as-required wpcf7-validates-as-email" aria-invalid="false" placeholder="E-MAIL" />
         <input type="text" name="your-company" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required aria-invalid="false" placeholder="COMPANY NAME" />
         <input type="text" name="your-company-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required aria-invalid="false" placeholder="COMPANY EMAIL" />
         <input type="text" name="your-company-url" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" required aria-invalid="false" placeholder="COMPANY WEBSITE" />
@@ -150,11 +151,16 @@ function atl_gallery_upload_frontend() {
 add_shortcode('atl-gallery-upload','atl_gallery_upload_frontend');
 
 function save_and_send_post_data() {
-
+	
 	if ( empty($_POST) || !wp_verify_nonce($_POST['name_of_nonce_field'],'name_of_my_action') )
 	{
-	   print 'Sorry, your nonce did not verify.';
+	   print 'Sorry, your nonce did not verify. Please try again';
 	   exit;
+	   
+	}else if ( !empty($_POST['not-your-email']) ) {
+		
+		print 'Please try again';
+		exit;
 
 	}else{
 
