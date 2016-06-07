@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f103ec05f90d04e2f5b0cb6c394457da",
-    "content-hash": "7a554cfcfbc95d07525adb8bd125e0ec",
+    "hash": "919da963e30b390e4ab1e5d9ee6dd49b",
+    "content-hash": "4f38de27c42d1c39244f4774b0fcbd08",
     "packages": [
         {
             "name": "composer/installers",
@@ -484,21 +484,41 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-mail-smtp",
+            "version": "0.9.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-mail-smtp/",
+                "reference": "tags/0.9.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-mail-smtp.0.9.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-mail-smtp/"
         }
     ],
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.6.0",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "1bcdf03b068a530ac1962ce671dead356eeba43b"
+                "reference": "fb72ed32f8418db5e7770be1653e62e0d6f5dd3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/1bcdf03b068a530ac1962ce671dead356eeba43b",
-                "reference": "1bcdf03b068a530ac1962ce671dead356eeba43b",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/fb72ed32f8418db5e7770be1653e62e0d6f5dd3d",
+                "reference": "fb72ed32f8418db5e7770be1653e62e0d6f5dd3d",
                 "shasum": ""
             },
             "require": {
@@ -563,7 +583,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-04-03 22:58:34"
+            "time": "2016-05-30 22:24:32"
         }
     ],
     "aliases": [],

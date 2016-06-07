@@ -43,6 +43,7 @@
     "wpackagist-plugin/contact-form-7": "4.4.1",
     "wpackagist-plugin/meta-box": "4.8.5",
     "wpackagist-plugin/wordpress-seo": "3.1.2",
+    "wpackagist-plugin/wp-mail-smtp": "0.9.6",
     "wp-sync-db/wp-sync-db" : "dev-master",
     "wp-sync-db/wp-sync-db-media-files" : "1.1.5"
   },
