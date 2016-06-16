@@ -256,7 +256,7 @@ function save_and_send_post_data() {
 				}
 
 				// EMAIL TEMPLATE
-				$strTo = array ('richard@thetallone.co.uk');
+				$strTo = array ('solid.timber@bigpond.com');
 				$headers = "Reply-To: ". wp_strip_all_tags( $email ) ."\r\n";
 				$headers .= "MIME-Version: 1.0\r\n";
 				$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
