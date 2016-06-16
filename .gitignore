@@ -1,14 +1,27 @@
 # Application
 web/app/plugins/*
 !web/app/plugins/.gitkeep
+!web/app/plugins/atl-custom
+!web/app/plugins/front-end-posting.php
+!web/app/plugins/recent-portfolio-posts.php
+!web/app/plugins/js_composer
+!web/app/plugins/Layerslider
+!web/app/plugins/qode-instagram-widget
+!web/app/plugins/Ultimate_VC_Addons
+!web/app/plugins/ATL-facebook-auto-post
+!web/app/plugins/wp-mail-smtp
 web/app/mu-plugins/*/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 
+#Used with Ultimate_VC_Addons
+!web/app/uploads/smile_fonts
+
 # WordPress
 web/wp
 web/.htaccess
+web/app/debug.log
 
 # WP-CLI
 db-sync
