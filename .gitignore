@@ -20,7 +20,6 @@ web/app/uploads/*
 
 # WordPress
 web/wp
-web/.htaccess
 web/app/debug.log
 
 # WP-CLI

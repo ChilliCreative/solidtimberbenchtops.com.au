@@ -1,0 +1,26 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /ATL/wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /ATL/wordpress/index.php [L]
+</IfModule>
+
+# END WordPress
+
+
+Redirect 301 /index.asp?pagename=contact+us /contact
+Redirect 301 /Index.asp?pagename=Who+We+Are&site=1&siteid=7039 /about
+Redirect 301 /index.asp?pagename=residential /services
+Redirect 301 /Index.asp?pagename=Contact /contact
+Redirect 301 /index.asp?pagename=delivery /services
+Redirect 301 /index.asp?pagename=privacy+policy /
+Redirect 301 /index.asp?pagename=environment /services
+Redirect 301 /Index.asp?pagename=What+We+Provide&site=1&siteid=7039 /services
+Redirect 301 /Index.asp?pagename=What+We+Provide /services
+Redirect 301 /Index.asp?pagename=What /services
+Redirect 301 /index.asp?pagename=commercial /services
+Redirect 301 /index.asp?pagename=privacy /
