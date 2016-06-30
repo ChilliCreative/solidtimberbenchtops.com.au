@@ -151,14 +151,14 @@ function atl_gallery_upload_frontend() {
 add_shortcode('atl-gallery-upload','atl_gallery_upload_frontend');
 
 function save_and_send_post_data() {
-	
+
 	if ( empty($_POST) || !wp_verify_nonce($_POST['name_of_nonce_field'],'name_of_my_action') )
 	{
 	   print 'Sorry, your nonce did not verify. Please try again';
 	   exit;
-	   
+
 	}else if ( !empty($_POST['not-your-email']) ) {
-		
+
 		print 'Please try again';
 		exit;
 
@@ -262,7 +262,7 @@ function save_and_send_post_data() {
 				$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 				$strSubject = 'ATL Website Upload Submission from: ' . wp_strip_all_tags( $firstname ) . ' ' . wp_strip_all_tags( $lastname ) . ' at ' . wp_strip_all_tags( $company ) . '. Please Review';
-				$strMessage = '<br><br>User Details: <br>Name: ' . wp_strip_all_tags( $firstname ) . ' ' . wp_strip_all_tags( $lastname ) . '<br>Email: ' . wp_strip_all_tags( $email ) . '<br><br>Company Details: <br>Email: ' . wp_strip_all_tags( $company_email ) . '<br>Website: ' . wp_strip_all_tags( $company_url ) . '<br>Phone: ' . wp_strip_all_tags( $company_tel ) . ' <br><br>Description:<br> ' . wp_strip_all_tags( $description ) . '<br><br>  Please use the following link to review and publish: <br> ' . admin_url( 'post.php?post=' . $pid .'&action=edit') . '.';
+				$strMessage = '<br><br>User Details: <br>Name: ' . wp_strip_all_tags( $firstname ) . ' ' . wp_strip_all_tags( $lastname ) . '<br>Email: ' . wp_strip_all_tags( $email ) . '<br><br>Company Details: <br>Company name: ' . wp_strip_all_tags( $company ) . '<br>Email: ' . wp_strip_all_tags( $company_email ) . '<br>Website: ' . wp_strip_all_tags( $company_url ) . '<br>Phone: ' . wp_strip_all_tags( $company_tel ) . ' <br><br>Description:<br> ' . wp_strip_all_tags( $description ) . '<br><br>  Please use the following link to review and publish: <br> ' . admin_url( 'post.php?post=' . $pid .'&action=edit') . '.';
 
 				wp_mail( $strTo, $strSubject, $strMessage, $headers);
 
