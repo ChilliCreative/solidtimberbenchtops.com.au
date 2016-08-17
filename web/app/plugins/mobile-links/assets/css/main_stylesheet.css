@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+.mobile_links_form{
+ 
+}
+.mlinks_h_val{ display:none; width:300px; min-height:300px;}
+.mobile_links_label_t{min-width:120px;display:inline-block;font-weight:700; margin:5px 0px;}
+.link_url{width: 60%; margin: 5px 10px 5px 0px;}
+#upload_icon{margin: 5px 4px 5px 0px;}
+#show_upload_preview{margin-bottom: 20px;}
+#wrap-menu-settings-body {
+	background:#FFFFFF;
+	padding:10px 30px 30px 30px;
+	width:90%;
+}
+.mlinks_title_div {background:#008ec2;	color:#FFF; width:90%;padding:10px 30px;border-top:#FFF solid 1px;}
+.wp-picker-container{ margin: 5px 4px 5px 0px; vertical-align: middle;}
+#mlinks_preview_container{ width:100%;   max-height:80px; display:table; border-collapse: collapse;}
+.mlinks_item{ width:100%; border:solid 1px; height:inherit; display:block; margin:0; padding:0px; cursor:pointer; border-collapse:collapse; background-position:center 10px ; background-repeat:no-repeat; padding-top:40px; text-transform:uppercase; text-align:center; background-size:26px;}
+a.mlinks_a{text-decoration:none; display: table-cell; width: 33%;}
+#mlinks_hollow{height:60px; width:100%; }
+.add_me{padding: 4px 8px;position: relative;text-decoration: none;border: none;-webkit-border-radius: 2px;border-radius: 2px;background: #e0e0e0;text-shadow: none;font-weight: 600;font-size: 13px; cursor:pointer;}
+.add_me:hover{background: #00a0d2; color: #fff;}
+.remove_me{ width: 16px; height:16px; display:inline-block; cursor:pointer; background:url(../images/remove.png);}
+.mbst_value_con{width: 70%; min-height:20px; border:solid 1px #ECF1F3; background:#F0F0F0; }
+.mlinks_array{ display:block; padding:5px 2px; text-align:center; text-decoration:none; color: #000; font-size:14px; border-bottom:#EFEFEF solid 1px;}
