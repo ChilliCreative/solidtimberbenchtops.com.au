@@ -2,9 +2,9 @@
 add_action('admin_menu', '_set_admin_view');
 function _set_admin_view()
 {
-	add_menu_page('Mobile Links', 'Mobile Links', 0, 'tbst_mobile_links-settings', 'tbst_mobile_links_settings_page',  'dashicons-admin-links');
-	add_submenu_page('tbst_mobile_links-settings','Preview', 'Preview', 0, 'tbst_mobile_links-preview', 'tbst_mobile_links_preview_page');
-	add_submenu_page('tbst_mobile_links-settings','Analytics', 'Analytics', 0, 'tbst_mobile_links-analytics', 'tbst_mobile_links_analytics_page');
+	add_menu_page('Mobile Links', 'Mobile Links', 'read', 'tbst_mobile_links-settings', 'tbst_mobile_links_settings_page',  'dashicons-admin-links');
+	add_submenu_page('tbst_mobile_links-settings','Preview', 'Preview', 'read', 'tbst_mobile_links-preview', 'tbst_mobile_links_preview_page');
+	add_submenu_page('tbst_mobile_links-settings','Analytics', 'Analytics', 'read', 'tbst_mobile_links-analytics', 'tbst_mobile_links_analytics_page');
 }
 
 function tbst_mobile_links_settings_page()
