@@ -10,7 +10,7 @@ if ( !class_exists( 'All_in_One_SEO_Pack_Performance' ) ) {
 
 		protected $module_info = Array( );
 
-		function All_in_One_SEO_Pack_Performance( $mod ) {
+		function All_in_One_SEO_Pack_Performance_func( $mod ) {
 			$this->name = __('Performance', 'all_in_one_seo_pack');		// Human-readable name of the plugin
 			$this->prefix = 'aiosp_performance_';						// option prefix
 			$this->file = __FILE__;									// the current file
