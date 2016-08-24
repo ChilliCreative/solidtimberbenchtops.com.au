@@ -30,6 +30,17 @@
 <body <?php body_class(); ?>>
 
 	<?php
+	/**
+	 * after_body hook
+	 *
+	 * Added by Chilli Development, careful when updating parent theme!
+	 *
+	 * @see imexpert_tracking() - hooked with 10
+	 */
+	do_action('after_body');
+	?>
+
+	<?php
 		$loading_animation = true;
 		if (isset($qode_options_proya['loading_animation'])){ if($qode_options_proya['loading_animation'] == "off") { $loading_animation = false; }};
 

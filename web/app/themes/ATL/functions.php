@@ -36,8 +36,6 @@ function atl_handle_attachment($file_handler,$post_id,$set_thu=true,$set_gal=tru
 
 // Add IMExpert tracking script
 function imexpert_tracking() { ?>
-
-
 	<!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NXMLC8"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -50,4 +48,4 @@ function imexpert_tracking() { ?>
 	<?php
 }
 //High number to place code immediately before closing body tag
-add_action('wp_head', 'imexpert_tracking', 9999);
+add_action('after_body', 'imexpert_tracking', 10);
